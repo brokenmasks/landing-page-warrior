@@ -1,0 +1,641 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;500&family=Roboto:wght@300&family=Source+Code+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;500&family=Roboto:wght@300&family=Saira+Extra+Condensed:wght@200;500&family=Source+Code+Pro:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    height: 100%;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 1280px;
+    margin: auto auto;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    font-size: 1rem;
+
+    /* border: 1px solid red; */
+}
+
+/* ESTILIZAÇÃO DO MENU DE NAVEGAÇÃO */
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5vh;
+        width: 100%;
+        padding: 0 3em;
+        border-bottom: 1px solid #384374;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    header .logo h3{
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    header .logo h3 span{
+        color: #29e7f2;
+    }
+    header ul{
+        display: flex;
+        gap: 2em;
+        list-style: none;
+    }
+    header ul li a{
+        font-size: 1.5rem;
+        color: #384374;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    header ul li a:hover{
+        text-decoration: underline;
+    }
+
+/* FINAL DA ESTILIZAÇÃO DO MENU DE NAVEGAÇÃO */
+
+
+/* ESTILIZAÇÃO DO CONTEÚDO GERAL */
+
+    .content{
+        font-family: 'Saira Extra Condensed', sans-serif;
+    }
+
+    .content .first{
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+
+
+        /* border: 1px solid green; */
+    }
+
+    /* ESTILIZAÇÃO DA ASIDE */
+
+        .content .first .aside{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 3rem 0 2rem;
+            margin-right: .5rem;
+            height: 100%;
+            width: 28%;
+            background: linear-gradient(to top, transparent 30%, #c9cbd8 70%);
+
+
+
+            /* border: 1px solid red; */
+        }
+        .content .first .aside h4{
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: #fb5607;
+        }
+        .content .first .aside p{
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            hyphens: auto;
+        }
+        .content .first .border-aside{
+            width: 2%;
+            background: linear-gradient(to top, transparent 30%, #c9cbd8 70%);
+
+            /* border: 1px solid green; */
+        }
+
+    /* FINAL DA ASIDE */
+
+
+    /* ESTILIZAÇÃO DA INFO DE SKETCHS  */
+        
+        .sketch{
+            width: 70%;
+            height: 50vh;
+
+            /* border: 1px solid red; */
+        }
+
+        .sketch .sketch-info-1, 
+        .sketch .sketch-info-2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 1rem;
+            padding: 1em 1.75rem;
+            
+            height: 50%;
+            width: 100%;
+
+            /* border-bottom: 1px solid #384374; */
+
+            /* border: 1px solid red; */
+        }
+        .sketch .sketch-info-1 .img-titulo-1{
+            display: flex;
+            height: 100%;
+            width: 50%;
+
+            
+            /* border: 1px solid green; */
+        }
+        .sketch .sketch-info-2 .img-titulo-2{
+            display: flex;
+            justify-content: flex-end;
+            height: 100%;
+            width: 50%;
+
+
+            /* border: 1px solid pink; */
+        }
+        .sketch .sketch-info-1 .blade-info{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 50%;
+            justify-content: center;
+
+
+            /* border: 1px solid red; */
+        }
+        .sketch .sketch-info-2 .info-axe{
+            display: flex;
+            height: 100%;
+            width: 50%;
+            justify-content: center;
+
+
+            /* border: 1px solid green; */
+        }
+
+        .sketch .sketch-info-1{
+            border-radius: 0 0 1em 0;
+        }
+        .sketch .sketch-info-2{
+            border-radius: 0 0 0 1em;
+        }
+        .sketch .sketch-info-1 .img-titulo-1 img{
+            height: 100%;
+            width: 80%;
+            border: 1px solid #384374;
+            border-radius: 0 .5em .5em 0;
+        }
+        .sketch .sketch-info-2 .img-titulo-2 img{
+            height: 100%;
+            width: 80%;
+            border: 1px solid #384374;
+            border-radius: .5em 0 0 .5em; 
+        }
+        .sketch .sketch-info-1 .blade-info .blade{
+            border: none;
+            width: auto;
+        }
+        .sketch .sketch-info-2 .info-axe .axe{
+            border: none;
+            width: auto;
+
+            /* border: 1px solid red; */
+        }
+
+        .sketch .sketch-info-1 .img-titulo-1 .info-1{
+            color: #fff;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: .12em;
+            white-space: nowrap;
+            background: #384374;
+            writing-mode: vertical-lr;
+            border-radius: 0 .5em .5em 0;
+            transform: rotate(-180deg);
+        }
+        .sketch .sketch-info-2 .img-titulo-2 .info-2{
+            color: #fff;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: .12em;
+            white-space: nowrap;
+            background: #384374;
+            writing-mode: vertical-lr;
+            border-radius: 0 .5em .5em 0;
+        }
+
+        .sketch .sketch-info-1 .txt-info-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            width: 80%;
+            padding: 1rem;
+        }
+        .sketch .sketch-info-2 .txt-info-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            width: 80%;
+            padding: 1rem;
+        }
+        .sketch .sketch-info-1 .txt-info-1 h4,.sketch .sketch-info-2 .txt-info-2 h4{
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            color: #fb5607;
+        }
+        .sketch .sketch-info-1 .txt-info-1 p,.sketch .sketch-info-2 .txt-info-2 p{
+            width: 100%;
+            color: #384374;
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1em;
+        }
+
+    /* FINAL DA INFO DE SkETCHS */
+
+    /* ESTILIZAÇÃO DIV SECOND */
+
+        /* ESTILIZAÇÃO DA AREA DE REDES SOCIAIS */
+
+
+            .content .second .social-links{
+                position: absolute;
+                left: .3rem;
+                top: 60vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                gap: .5em;
+                height: max-content;
+                width: max-content;
+
+                
+                /* border: 1px solid red; */
+            }
+            .content .second  .social-links .social-box{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 0 .25em 0;
+            }
+            .content .second .social-links .social-box i{
+                font-size: 2rem;
+            }
+            .content .second .social-links .social-box:nth-child(1) i{
+                color: #a036ba;
+            }
+            .content .second .social-links .social-box:nth-child(2) i{
+                color: #e60019;
+            }
+            .content .second .social-links .social-box:nth-child(3) i{
+                color: #3eade2;
+            }
+            .content .second .social-links .social-box a{
+                display: block;
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: #000;
+                margin-left: .5em;
+            }
+            
+            /* FIM DA AREA DE REDES SOCIAIS */
+            
+            
+            /* ESTILIZAÇÃO DO GUERREIRO E SUAS INFOS */
+            
+            .content .second .second-content{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                height: 45vh;
+                width: 70%;
+
+
+                /* border: 1px solid purple; */
+            }
+            .content .second .warrior{
+                position: relative;
+
+
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100%;
+                width: 65%;
+
+
+                /* border: 1px solid aqua; */
+            }
+            .content .second .warrior .warrior-img img{
+                position: absolute;
+                bottom: -10%;
+                left: -50%;
+                width: 85%;
+            }
+            .content .second .warrior .warrior-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100%;
+                width: 75%;
+
+
+                /* border: 1px solid green; */
+            }
+            .content .second .warrior .warrior-info .topic-1{
+                width: 85%;
+                margin-bottom: .2em;
+            }
+            .content .second .warrior .warrior-info .topic-2{
+                width: 85%;
+                margin-left: 4rem;
+                margin-bottom: .2em;
+            }
+            .content .second .warrior .warrior-info .topic-3{
+                width: 85%;
+                margin-left: 3rem;
+            }
+            .content .second .warrior .warrior-info .topic-1 h5,
+            .content .second .warrior .warrior-info .topic-2 h5,
+            .content .second .warrior .warrior-info .topic-3 h5{
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                color: #384374;
+            }
+            .content .second .warrior .warrior-info .topic-1 p,
+            .content .second .warrior .warrior-info .topic-2 p,
+            .content .second .warrior .warrior-info .topic-3 p{
+                font-size: 1.2rem;
+                line-height: 1em;
+                margin-left: 2em;
+            }
+
+        /* FIM DO GUERREIRO E SUAS INFOS */
+
+        /* ESTILIZAÇÃO  DAS PATENTES */
+
+            .content .second .patent{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 100%;
+                width: 35%;
+                padding: 0 1.75rem;
+                border-radius: 1rem;
+
+
+                /* border: 1px solid #384374; */
+            }
+            .content .second .patent h5{
+                text-transform: uppercase;
+                font-size: 1.8rem;
+                color: #fb5607;
+            }
+            .content .second .patent-info{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .content .second .patent-info p{
+                margin-left: 1em;
+                font-size: 1.3rem;
+                line-height: 1.1em;
+            }
+            .content .second .patent-warrior-simbols{
+                display: flex;
+                justify-content: center;
+                height: 55%;
+                align-items: center;
+                gap: .5rem;
+
+
+                /* border: 1px solid yellow; */
+            }
+            .content .second .patent-simbols{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 100%;
+                width: 50%;
+
+
+                /* border: 1px solid red; */
+            }
+            .content .second .patent-warrior{
+                height: 100%;
+                width: 50%;
+
+
+                /* border: 1px solid brown; */
+            }
+            .content .second .patent-simbols img{
+                width: 100%;
+            }
+            .content .second .patent-warrior img{
+                height: 100%;
+                width: 100%;
+            }
+
+        /* FIM DAS PATENTES */
+
+
+    /* FINAL DIV SECOND */
+
+/* FINAL DO CONTEÚDO GERAL */
+
+
+
+@media (max-height: 990px){
+    .content .second .warrior .warrior-img img{
+        width: 80%;
+        left: -45%;
+    }
+    .content .second .social-links{
+        top: unset;
+        bottom: 0;
+    }
+}
+@media (max-height: 900px){
+    html{
+        font-size: 100%;
+    }
+    .content .second .warrior .warrior-img img{
+        width: 75%;
+        left: -40%;
+    }
+}
+
+@media (max-height: 800px){
+    html{
+        font-size: 95%;
+    }
+    .content .second .warrior .warrior-img img{
+        width: 65%;
+        left: -35%;
+    }
+}
+@media (max-height: 700px){
+    html{
+        font-size: 85%;
+    }
+    .content .second .warrior .warrior-img img{
+        width: 65%;
+        left: -40%;
+    }
+}
+
+
+
+
+
+@media (max-width: 1315px){
+
+    html{
+        font-size: 97%;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .content .first{
+        height: 45vh;
+    }
+    .sketch{
+        height: 45vh;
+    }
+    
+    .content .second .social-links{
+        top: 60vh;
+    }
+    
+    .content .second .second-content{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+
+    .content .second .patent{
+        order: -1;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        height: 60%;
+    }
+    .content .second .patent-info{
+        width: 25%;
+        height: 100%;
+        justify-content: center;
+    }
+    .content .second .patent-warrior-simbols{
+        width: 40%;
+        height: 100%;
+    }
+    .content .second .patent-simbols img{
+        width: 80%;
+    }
+    .content .second .patent-warrior img{
+        width: 80%;
+}
+
+
+    .content .second .warrior{
+        width: 100%;
+        height: 40%;
+    }
+
+
+    .content .second .warrior .warrior-info{
+        width: 65%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .content .second .warrior .warrior-info .topic-1{
+        width: 30%;
+        height: 100%;
+        margin-top: 1rem;
+
+    }
+    .content .second .warrior .warrior-info .topic-2{
+        margin-left: 0;
+        width: 30%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+    .content .second .warrior .warrior-info .topic-3{
+        margin-left: 0;
+        width: 30%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+    .content .second .warrior .warrior-img img{
+        width: 38%;
+        left: 0;
+        bottom: -20%;
+    }
+}
+
+
+@media (max-width: 1190px){
+
+    html{
+        font-size: 95%;
+    }
+
+    .content .second .warrior .warrior-img img{
+        width: 38%;
+        left: 0;
+        bottom: -20%;
+    }
+}
+
+@media (max-width: 1090px){
+    html{
+        font-size: 91.5%;
+    }
+}
+@media (max-width: 1015px){
+    html{
+        font-size: 89.5%;
+    }
+}
+
+@media (max-width: 990px){
+    html{
+        font-size: 87%;
+    }
+}
+@media (max-width: 960px){
+    html{
+        font-size: 83%;
+    }
+}
+@media (max-width: 890px){
+    html{
+        font-size: 78%;
+    }
+}
+@media (max-width: 870px){
+    html{
+        font-size: 76%;
+    }
+
+
+}
